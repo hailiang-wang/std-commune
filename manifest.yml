@@ -1,0 +1,9 @@
+---
+applications:
+- name: stonda
+  memory: 512M
+  instances: 1
+  host: stonda
+  domain: ng.bluemix.net
+  path: .
+  command: node server.js
