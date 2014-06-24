@@ -11,6 +11,7 @@
     <link href="jquery/jquery-ui.min.css" rel="stylesheet" type="text/css">
     <script src="jquery/jquery-2.1.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 
   </head>
 
@@ -25,10 +26,10 @@
                   <tr align="center" class="text"> 
                     <td width="80"><font color="#3C3C3C"><strong><img src="images/username.gif" width="70" height="12"></strong></font></td>
                     <td width="94"><font color="#3C3C3C"> 
-                      <input name="textfield" type="text" class="text" size="10">
+                      <input id="username" type="text" class="textbox default" value="用户名" size="10">
                       </font></td>
                     <td width="46"><font color="#3C3C3C"> 
-                      <input name="textfield2" type="text" class="text" size="10">
+                      <input id="password" type="password" class="textbox" value="密码" size="10">
                       </font></td>
                     <td width="46"><font color="#3C3C3C"><img src="images/go.gif" width="30" height="25"></font></td>
                   </tr>
@@ -61,7 +62,7 @@
         <td height="38" align="left" valign="top" background="images/but_bg.gif"><table width="770" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td width="338" align="left" valign="top"><img src="images/top02.gif" width="338" height="38"></td>
-              <td width="78" align="left" valign="top"><img src="images/but01.gif" width="78" height="38"></td>
+              <td width="78" align="left" valign="top"><img id="btnRegister" src="images/but01.gif" width="78" height="38"></td>
               <td width="84" align="left"><img src="images/but02.gif" width="84" height="38"></td>
               <td width="81" align="left"><img src="images/but03.gif" width="81" height="38"></td>
               <td width="49" align="left"><img src="images/but04.gif" width="49" height="38"></td>
@@ -192,5 +193,24 @@
       </tr>
     </table>
   </form>
+<!-- dialogs -->
+  <div class="modal fade" id="dialogRegister">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">注册账号</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary">确认</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
   </body>
   </html>
