@@ -193,7 +193,7 @@
       </tr>
     </table>
   </form>
-<!-- dialogs -->
+  <!-- dialogs -->
   <div class="modal fade" id="dialogRegister">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -201,13 +201,31 @@
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4 class="modal-title">注册账号</h4>
         </div>
-        <div class="modal-body">
-          <p>One fine body&hellip;</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-          <button type="button" class="btn btn-primary">确认</button>
-        </div>
+        <form role="form">
+          <div class="modal-body">
+              <div class="form-group">
+                <label for="regUsername">用户名</label>
+                <input type="text" class="form-control" id="regUsername" placeholder="张三"> 
+                </div>
+              <div class="form-group">
+                <label for="regPassword">密码</label>
+                <input type="password" class="form-control" id="regPassword" placeholder="****" >
+              </div>
+              <div class="form-group">
+                <label for="regEmail">电子邮箱</label>
+                <input type="email" class="form-control" id="regEmail" placeholder="my@mail.com">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> 接受我们的服务协议
+                </label>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="submit" class="btn btn-primary">确认</button>
+          </div>
+        </form>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
